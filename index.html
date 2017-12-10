@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,10 +12,16 @@
             {
                 window.location.replace("NewBookstoreEntry.php");
             }
+            function redirectToTableIndex()
+            {
+                window.location.replace("indexToTestTableCall.php");
+            }
         </script>
     </head>
     <body>
         <p>Hello, world! I am a web page for a bookstore.</p>
         <button type="button" id="newBookEntry" OnClick=redirectToBookEntry()>Add a Book to the Database</button>
+        <br>
+        <button type="button" id="tableLookup" OnClick=redirectToTableIndex()>View Database</button>
     </body>
 </html>
