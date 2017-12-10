@@ -11,7 +11,7 @@
 
         <meta charset="utf-8">
 
-        <title>New Book Entry</title>
+        <title>New Employee Entry</title>
 
         <script type="text/javascript">
 
