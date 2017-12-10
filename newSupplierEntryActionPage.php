@@ -1,4 +1,4 @@
-
+ 
 <?php
 
   $con = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306');
@@ -30,11 +30,11 @@
   $phone .= "'";
 
 
-  $query = "INSERT INTO book (SupplierID, Name, Address, Phone_Num) VALUES ($sid, $name, $add, $phone)";
+  $query = "INSERT INTO supplier (SupplierID, Name, Address, Phone_Num) VALUES ($sid, $name, $add, $phone)";
 
 
   $result = mysqli_query($con, $query);
 
-  header("Location: Table_Author.php");
+  header("Location: Table_Supplier.php");
 
 ?>
