@@ -13,11 +13,20 @@
          tr:nth-child(even) { background-color: white; }
          tr:first-child { background-color: lightgreen; }
       </style>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
    </head>
    <body>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html"><b>Book Store</b></a></li>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="NewBookstoreEntry.php">Add Book</a></li>
+				<li class="active"><a href="indexToTestTableCall.php">Book List</a></li>
+			</ul> 
+		</div>
       <?php
       //php 7
-	print( "<p><a href = 'index.php'>Home</a></p>");
          // build SELECT query
          $query = "SELECT * FROM publisher";
 
