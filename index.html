@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,8 +6,15 @@
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <title>Welcome to your local bookstore!</title>
+        <script type="text/javascript">
+            function redirectToBookEntry()
+            {
+                window.location.replace("NewBookstoreEntry.php");
+            }
+        </script>
     </head>
     <body>
         <p>Hello, world! I am a web page for a bookstore.</p>
+        <button type="button" id="newBookEntry" OnClick=redirectToBookEntry()>Add a Book to the Database</button>
     </body>
 </html>
