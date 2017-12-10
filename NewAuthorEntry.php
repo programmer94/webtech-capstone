@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,7 +11,7 @@
 
         <meta charset="utf-8">
 
-        <title>New Book Entry</title>
+        <title>New Author Entry</title>
 
         <script type="text/javascript">
 
