@@ -5,9 +5,16 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <meta charset="utf-8">
         <title>New Book Entry</title>
+        <script type="text/javascript">
+            function returnToHomePage()
+            {
+                window.location.replace("index.html");
+            }
+        </script>
     </head>
     <body>
         <h1>New Book Entry</h1>
+        <button type="button" id="returnToHomePage" OnClick="returnToHomePage()">Return to Home Page</button>
         <form id="newEntry" action="newEntryActionPage.php" method="post">
             <table>
                 <tr>
