@@ -5,7 +5,7 @@
 
   $ISBN = "'";
 
-  $ISBN .= $_POST['PID'];
+  $ISBN .= $_POST['ISBN'];
 
   $ISBN .= "'";
 
