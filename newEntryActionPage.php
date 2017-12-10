@@ -20,4 +20,10 @@
   $bid = "'";
   $bid .= $_POST['BID'];
   $bid .= "'";
+
+  $query = "INSERT INTO book (ISBN, Bookshelf_Num, PublisherID, AuthorID, Title) VALUES ($isbn, $bid, $pid, $aid, $title)";
+
+  $result = mysqli_query($con, $query);
+
+  header("Location: Table_Book.php");
 ?>
