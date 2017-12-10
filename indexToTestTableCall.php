@@ -16,13 +16,20 @@ Index to test call of tables
             label   { width: 5em; float: left; }
             h1      { color: black; text-align: center; }
         </style>
-	<script type = "text/javascript">
-            document.writeln("<h1>Welcome to The Book Store Page!</h1>");
-	</script>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
    </head>
    <body>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html"><b>Book Store</b></a></li>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="NewBookstoreEntry.php">Add Book</a></li>
+				<li class="active"><a href="indexToTestTableCall.php">Book List</a></li>
+			</ul> 
+		</div>
     <?php     
-	print("<p><a href = 'Table_Author.php'>Click here to view database for table author.</a></p>");
+		print("<p><a href = 'Table_Author.php'>Click here to view database for table author.</a></p>");
         print("<p><a href = 'Table_Billing.php'>Click here to view database for table billing.</a></p>");
         print("<p><a href = 'Table_Book.php'>Click here to view database for table book.</a></p>");
         print("<p><a href = 'Table_Book_Store.php'>Click here to view database for table book store.</a></p>");

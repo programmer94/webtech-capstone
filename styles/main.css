@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-body #nav ul {
+#nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,11 @@ body #nav ul {
     background-color: #333;
 }
 
-body #nav li {
+#nav li {
     float: left;
 }
 
-body #nav li a {
+#nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -22,10 +22,10 @@ body #nav li a {
     text-decoration: none;
 }
 
-body #nav li a:hover:not(.active) {
+#nav li a:hover:not(.active) {
     background-color: #111;
 }
 
-.active {
-    background-color: #4CAF50;
+#nav .active {
+    background-color: #5B5B5B;
 }

@@ -1,4 +1,4 @@
- OnCli
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,8 +27,14 @@
         </script>
     </head>
     <body>
-        <h1>New Book Entry</h1>
-        <button type="button" id="returnToHomePage" OnClick="returnToHomePage()">Return to Home Page</button>
+        <div id="nav">
+			<ul>
+				<li><a href="index.html"><b>Book Store</b></a></li>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+				<li><a href="indexToTestTableCall.php">Book List</a></li>
+			</ul> 
+		</div>
         <form id="newEntry" action="newEntryActionPage.php" method="post">
             <table>
                 <tr>
