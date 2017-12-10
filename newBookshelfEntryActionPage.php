@@ -19,6 +19,6 @@
 
   $result = mysqli_query($con, $query);
 
-  header("Location: Table_Book_Store.php");
+  header("Location: Table_Book_Shelf.php");
 
 ?>
