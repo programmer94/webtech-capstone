@@ -13,18 +13,26 @@
          tr:nth-child(even) { background-color: white; }
          tr:first-child { background-color: lightgreen; }
       </style>
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="styles/main.css">
    </head>
    <body>
-       
+       <div id="nav">
+			<ul>
+				<li><a href="index.html"><b>Book Store</b></a></li>
+				<li><a href="index.html"><b>Home</b></a></li>
+				<li><a href="NewBookstoreEntry.php">Add Book</a></li>
+				<li class="active"><a href="indexToTestTableCall.php">Book List</a></li>
+			</ul> 
+		</div>
       <?php
       //php 7
-	print( "<p><a href = 'index.php'>Home</a></p>");
          // build SELECT query
          $query = "SELECT * FROM book shelf";
 
          // Connect to MySQL
          if ( !( $database = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306') ) )
-            die( "<p>Could not connect to datbase</p></body></html>" );
+            die( "<p>Could not connect to database</p></body></html>" );
 
          // open database
          if ( !mysqli_select_db( $database, "bookstore" ) )
