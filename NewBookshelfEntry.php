@@ -1,4 +1,4 @@
- 
+	 
 <!DOCTYPE html>
 
 <html lang="en">
@@ -64,9 +64,9 @@
                     <td><input type="text" class="inputText" id="cat" name="cat"></td>
 
                 </tr>
-			
+				
             </table>
-
+		<input type="submit">
         </form>
 
     </body>
