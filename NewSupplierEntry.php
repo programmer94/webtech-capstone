@@ -26,7 +26,7 @@
         </script>
 
     </head>
-
+		
     <body>
 
         <div id="nav">
@@ -80,7 +80,7 @@
 					<td><input type="text" class="inputText" id="phone" name="phone">
 				</tr>
             </table>
-
+		<input type="submit">
         </form>
 
     </body>
