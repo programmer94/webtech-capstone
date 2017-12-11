@@ -1,3 +1,4 @@
+
 <!DOCTYPE gtml>
 <!-- CIS435.F17: Final Project -->
 <!-- BookStore_DB.Billing_Table -->
@@ -15,6 +16,12 @@
         </style>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript">
+		function redirectToAddBilling()
+		{
+			window.location.replace("NewBillingEntry.php");
+		}
+	</script>
     </head>
     <body>
     	<div id="nav">
@@ -45,7 +52,7 @@
                 die(mysqli_error(). "</body></html>");
             }//end if
         ?><!--end PHP script -->
-        
+        <button type="button" OnClick=redirectToAddBilling()>Add Invoice</button>
         <h1>Billing DB</h1>
         <table>
          <tr>
