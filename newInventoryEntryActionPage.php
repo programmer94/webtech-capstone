@@ -16,7 +16,7 @@
   $qty .= "'";
   
 
-  $query = "INSERT INTO publisher (ISBN, Quantity) VALUES ($ISBN, $qty)";
+  $query = "INSERT INTO inventory (ISBN, Quantity) VALUES ($ISBN, $qty)";
 
   $result = mysqli_query($con, $query);
 
