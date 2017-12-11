@@ -49,10 +49,11 @@
       <h1>Book DB</h1>
       <table>
          <tr>
-            <th>Author ID</th>
             <th>ISBN</th>
-            <th>first Name</th>
-            <th>last Name</th>			
+            <th>Book Shelf Number</th>
+            <th>Puplisher ID</th>
+            <th>Title</th>
+            <th>Author ID</th>	
          </tr>
          <?php
          //php 7
