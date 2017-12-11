@@ -65,6 +65,7 @@
                     <td><button type="button id="searchBookshelves" OnClick=redirectToBookshelfTable()>Search or Add Booksheves</button></td>
             </tr>
             </table>
+	<input type="submit">
         </form>
     </body>
 </html>
