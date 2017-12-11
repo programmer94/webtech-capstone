@@ -59,7 +59,7 @@
 
                 <tr>
 
-                    <td>Name&nbsp </td>
+                  <td>Name&nbsp </td>
 
                     <td><input type="text" class="inputText" id="name" name="name"></td>
 
@@ -106,7 +106,7 @@
                 </tr>
 				
             </table>
-
+		<input type="submit">
         </form>
 
     </body>
