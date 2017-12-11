@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2017 at 01:36 AM
+-- Generation Time: Dec 11, 2017 at 02:24 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -59,7 +59,8 @@ CREATE TABLE `book` (
   `ISBN` char(13) NOT NULL,
   `Bookshelf_Num` char(4) DEFAULT NULL,
   `PublisherID` char(4) DEFAULT NULL,
-  `Title` varchar(30) DEFAULT NULL
+  `Title` varchar(30) DEFAULT NULL,
+  `Author ID` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -155,6 +156,12 @@ CREATE TABLE `supplier` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `author`
+--
+ALTER TABLE `author`
+  ADD PRIMARY KEY (`AuthorID`);
 
 --
 -- Indexes for table `billing`
