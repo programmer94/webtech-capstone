@@ -27,7 +27,7 @@
 
 
 
-  $query = "INSERT INTO book (AuthorID, fName, lName) VALUES ($aid, $fName, $lName)";
+  $query = "INSERT INTO author (AuthorID, fName, lName) VALUES ($aid, $fName, $lName)";
 
 
 
