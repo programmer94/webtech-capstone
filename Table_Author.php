@@ -51,7 +51,6 @@
       <table>
          <tr>
             <th>Author ID</th>
-            <th>ISBN</th>
             <th>First Name</th>
             <th>Last Name</th>			
          </tr>
