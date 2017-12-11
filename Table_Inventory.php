@@ -15,6 +15,12 @@
       </style>
       	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	  <script type="text/javascript">
+		function redirectToAddInventory()
+		  {
+			  window.location.replace("NewInventoryEntry.php");
+		  }
+	   </script>
    </head>
    <body>
 		<div id="nav">
@@ -46,7 +52,7 @@
             die( mysqli_error() . "</body></html>" );
          } // end if
       ?><!-- end PHP script -->
-
+	<button type="button" OnClick=redirectToAddInventory()>Add Inventory</button>
       <h1>Inventory DB</h1>
       <table>         
          <tr>
