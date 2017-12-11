@@ -21,6 +21,7 @@
 
                 window.location.replace("index.html");
 
+		    
             }
 
         </script>
@@ -82,7 +83,7 @@
                 </tr>
 				
             </table>
-
+		<input type="submit">
         </form>
 
     </body>
