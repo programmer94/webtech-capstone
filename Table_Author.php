@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- CIS435.F17: Final Project -->
 <!-- BookStore_DB.Author_Table -->
@@ -15,6 +16,12 @@
 		</style>
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<script type="text/javascript">
+			function redirectToAddAuthor()
+			{
+				window.location.replace("NewAuthorEntry.php");
+			}
+		</script>
    </head>
    <body>
 		<div id="nav">
@@ -46,7 +53,7 @@
             die( mysqli_error() . "</body></html>" );
          } // end if
       ?><!-- end PHP script -->
-
+	   <button type="button" OnClick=redirectToAddAuthor()>Add Author</button>
       <h1>Author DB</h1>
       <table>
          <tr>
