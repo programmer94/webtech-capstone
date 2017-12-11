@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
    </head>
    <body>
-		<div id="nav">
+		<div id="nav">			
 			<ul>
 				<li><a href="index.html"><b>Book Store</b></a></li>
 				<li><a href="index.html"><b>Home</b></a></li>
@@ -43,7 +43,7 @@
          if ( !( $result = mysqli_query( $database, $query ) ) )
          {
             print( "<p>Could not execute query!</p>" );
-            die( mysqli_error()."</body></html>");
+            die( mysqli_error($database)."</body></html>");
          } // end if
       ?><!-- end PHP script -->
 
