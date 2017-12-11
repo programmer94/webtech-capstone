@@ -24,7 +24,6 @@
             }
 
         </script>
-
     </head>
 
     <body>
@@ -89,7 +88,7 @@
 
                 </tr>
             </table>
-
+	<input type="submit">
         </form>
 
     </body>
