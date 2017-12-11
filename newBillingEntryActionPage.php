@@ -34,7 +34,7 @@
   $ISBN .= "'";
   
 
-  $query = "INSERT INTO publisher (Invoice_Num, Date, Price, Quantity, ISBN) VALUES ($BillID, $date, $price, $qty, $ISBN)";
+  $query = "INSERT INTO billing (Invoice_Num, Date, Price, Quantity, ISBN) VALUES ($BillID, $date, $price, $qty, $ISBN)";
 
   $result = mysqli_query($con, $query);
 
