@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,9 +14,7 @@
 
         <script type="text/javascript">
 
-            function returnToHomePage()
-
-            {
+            function returnToHomePage() {
 
                 window.location.replace("index.html");
 
@@ -31,19 +28,19 @@
 
         <div id="nav">
 
-			<ul>
+            <ul>
 
-				<li><a href="index.html"><b>Book Store</b></a></li>
+                <li><a href="index.html"><b>Book Store</b></a></li>
 
-				<li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
 
-				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+                <li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
 
-				<li><a href="indexToTestTableCall.php">Book List</a></li>
+                <li><a href="indexToTestTableCall.php">Book List</a></li>
 
-			</ul> 
+            </ul>
 
-		</div>
+        </div>
 
         <form id="newAuthorEntry" action="newAuthorEntryActionPage.php" method="post">
 
@@ -51,7 +48,7 @@
 
                 <tr>
 
-                    <td>AuthorID&nbsp </td>
+                    <td>AuthorID&nbsp</td>
 
                     <td><input type="text" class="inputText" id="AID" name="AID"></td>
 
@@ -59,7 +56,7 @@
 
                 <tr>
 
-                    <td>First Name&nbsp </td>
+                    <td>First Name&nbsp</td>
 
                     <td><input type="text" class="inputText" id="fName" name="fName"></td>
 
@@ -67,13 +64,13 @@
 
                 <tr>
 
-                    <td>Last Name&nbsp </td>
+                    <td>Last Name&nbsp</td>
 
                     <td><input type="text" class="inputText" id="lName" name="lName"></td>
 
                 </tr>
             </table>
-	    <input type="submit">
+            <input type="submit">
         </form>
 
     </body>

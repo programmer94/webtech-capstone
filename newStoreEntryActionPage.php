@@ -1,32 +1,31 @@
-
 <?php
 
-  $con = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306');
+    $con = mysqli_connect('localhost', 'nesrin', 'p4@cis435', 'bookstore', '3306');
 
-  $StoreID = "'";
+    $StoreID = "'";
 
-  $StoreID .= $_POST['StoreID'];
+    $StoreID .= $_POST['StoreID'];
 
-  $StoreID .= "'";
+    $StoreID .= "'";
 
-  $loc = "'";
-  
-  $loc .= $_POST['loc'];
-  
-  $loc .= "'";
-  
-  $phone = "'";
-  
-  $phone .= $_POST['phone'];
-  
-  $phone .= "'";
+    $loc = "'";
 
+    $loc .= $_POST['loc'];
 
-  $query = "INSERT INTO book_store (Store_Num, Location, Phone_Num) VALUES ($StoreID, $loc, $phone)";
+    $loc .= "'";
+
+    $phone = "'";
+
+    $phone .= $_POST['phone'];
+
+    $phone .= "'";
 
 
-  $result = mysqli_query($con, $query);
+    $query = "INSERT INTO book_store (Store_Num, Location, Phone_Num) VALUES ($StoreID, $loc, $phone)";
 
-  header("Location: Table_Book_Store.php");
+
+    $result = mysqli_query($con, $query);
+
+    header("Location: Table_Book_Store.php");
 
 ?>

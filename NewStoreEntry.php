@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,9 +14,7 @@
 
         <script type="text/javascript">
 
-            function returnToHomePage()
-
-            {
+            function returnToHomePage() {
 
                 window.location.replace("index.html");
 
@@ -31,19 +28,19 @@
 
         <div id="nav">
 
-			<ul>
+            <ul>
 
-				<li><a href="index.html"><b>Book Store</b></a></li>
+                <li><a href="index.html"><b>Book Store</b></a></li>
 
-				<li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
 
-				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+                <li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
 
-				<li><a href="indexToTestTableCall.php">Book List</a></li>
+                <li><a href="indexToTestTableCall.php">Book List</a></li>
 
-			</ul> 
+            </ul>
 
-		</div>
+        </div>
 
         <form id="newAuthorEntry" action="newStoreEntryActionPage.php" method="post">
 
@@ -51,7 +48,7 @@
 
                 <tr>
 
-                    <td>Store_Num&nbsp </td>
+                    <td>Store_Num&nbsp</td>
 
                     <td><input type="text" class="inputText" id="StoreID" name="StoreID"></td>
 
@@ -59,21 +56,21 @@
 
                 <tr>
 
-                    <td>Location&nbsp </td>
+                    <td>Location&nbsp</td>
 
                     <td><input type="text" class="inputText" id="loc" name="loc"></td>
 
                 </tr>
-				
-				<tr>
-					
-					<td>Phone Number&nbsp </td>
-					
-					<td><input type="text" class="inputText" id="phone" name="phone">
-				</tr>
+
+                <tr>
+
+                    <td>Phone Number&nbsp</td>
+
+                    <td><input type="text" class="inputText" id="phone" name="phone">
+                </tr>
             </table>
 
-		<input type="submit">
+            <input type="submit">
         </form>
 
     </body>

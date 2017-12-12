@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,9 +14,7 @@
 
         <script type="text/javascript">
 
-            function returnToHomePage()
-
-            {
+            function returnToHomePage() {
 
                 window.location.replace("index.html");
 
@@ -31,19 +28,19 @@
 
         <div id="nav">
 
-			<ul>
+            <ul>
 
-				<li><a href="index.html"><b>Book Store</b></a></li>
+                <li><a href="index.html"><b>Book Store</b></a></li>
 
-				<li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
 
-				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+                <li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
 
-				<li><a href="indexToTestTableCall.php">Book List</a></li>
+                <li><a href="indexToTestTableCall.php">Book List</a></li>
 
-			</ul> 
+            </ul>
 
-		</div>
+        </div>
 
         <form id="newOrderEntry" action="newOrderEntryActionPage.php" method="post">
 
@@ -51,7 +48,7 @@
 
                 <tr>
 
-                    <td>Order ID&nbsp </td>
+                    <td>Order ID&nbsp</td>
 
                     <td><input type="text" class="inputText" id="OID" name="OID"></td>
 
@@ -59,37 +56,37 @@
 
                 <tr>
 
-                    <td>Order Date&nbsp </td>
+                    <td>Order Date&nbsp</td>
 
                     <td><input type="text" class="inputText" id="oDate" name="oDate"></td>
 
                 </tr>
-				
-				<tr>
 
-                    <td>Order Time&nbsp </td>
+                <tr>
+
+                    <td>Order Time&nbsp</td>
 
                     <td><input type="text" class="inputText" id="oTime" name="oTime"></td>
 
                 </tr>
-				
-				<tr>
 
-                    <td>Supplier ID&nbsp </td>
+                <tr>
+
+                    <td>Supplier ID&nbsp</td>
 
                     <td><input type="text" class="inputText" id="SID" name="SID"></td>
 
                 </tr>
-				
-				<tr>
 
-                    <td>Employee ID&nbsp </td>
+                <tr>
+
+                    <td>Employee ID&nbsp</td>
 
                     <td><input type="text" class="inputText" id="EID" name="EID"></td>
 
                 </tr>
             </table>
-		<input type="submit">
+            <input type="submit">
         </form>
 
     </body>

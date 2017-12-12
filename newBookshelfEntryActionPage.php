@@ -1,24 +1,23 @@
-
 <?php
 
-  $con = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306');
+    $con = mysqli_connect('localhost', 'nesrin', 'p4@cis435', 'bookstore', '3306');
 
-  $bsid = "'";
+    $bsid = "'";
 
-  $bsid .= $_POST['BSID'];
+    $bsid .= $_POST['BSID'];
 
-  $bsid .= "'";
+    $bsid .= "'";
 
-  $cat = "'";
-  
-  $cat .= $_POST['cat'];
-  
-  $cat .= "'";
+    $cat = "'";
 
-  $query = "INSERT INTO book_shelf (Bookshelf_Num, Category) VALUES ($bsid, $cat)";
+    $cat .= $_POST['cat'];
 
-  $result = mysqli_query($con, $query);
+    $cat .= "'";
 
-  header("Location: Table_Book_Shelf.php");
+    $query = "INSERT INTO book_shelf (Bookshelf_Num, Category) VALUES ($bsid, $cat)";
+
+    $result = mysqli_query($con, $query);
+
+    header("Location: Table_Book_Shelf.php");
 
 ?>

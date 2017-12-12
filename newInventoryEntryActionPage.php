@@ -1,25 +1,24 @@
-
 <?php
 
-  $con = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306');
+    $con = mysqli_connect('localhost', 'nesrin', 'p4@cis435', 'bookstore', '3306');
 
-  $ISBN = "'";
+    $ISBN = "'";
 
-  $ISBN .= $_POST['ISBN'];
+    $ISBN .= $_POST['ISBN'];
 
-  $ISBN .= "'";
+    $ISBN .= "'";
 
-  $qty = "'";
-  
-  $qty .= $_POST['qty'];
-  
-  $qty .= "'";
-  
+    $qty = "'";
 
-  $query = "INSERT INTO inventory (ISBN, Quantity) VALUES ($ISBN, $qty)";
+    $qty .= $_POST['qty'];
 
-  $result = mysqli_query($con, $query);
+    $qty .= "'";
 
-  header("Location: Table_Inventory.php");
+
+    $query = "INSERT INTO inventory (ISBN, Quantity) VALUES ($ISBN, $qty)";
+
+    $result = mysqli_query($con, $query);
+
+    header("Location: Table_Inventory.php");
 
 ?>

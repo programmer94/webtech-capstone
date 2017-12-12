@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,13 +14,11 @@
 
         <script type="text/javascript">
 
-            function returnToHomePage()
-
-            {
+            function returnToHomePage() {
 
                 window.location.replace("index.html");
 
-		    
+
             }
 
         </script>
@@ -32,19 +29,19 @@
 
         <div id="nav">
 
-			<ul>
+            <ul>
 
-				<li><a href="index.html"><b>Book Store</b></a></li>
+                <li><a href="index.html"><b>Book Store</b></a></li>
 
-				<li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
 
-				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+                <li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
 
-				<li><a href="indexToTestTableCall.php">Book List</a></li>
+                <li><a href="indexToTestTableCall.php">Book List</a></li>
 
-			</ul> 
+            </ul>
 
-		</div>
+        </div>
 
         <form id="newAuthorEntry" action="newPublisherEntryActionPage.php" method="post">
 
@@ -52,7 +49,7 @@
 
                 <tr>
 
-                    <td>Publisher ID&nbsp </td>
+                    <td>Publisher ID&nbsp</td>
 
                     <td><input type="text" class="inputText" id="PID" name="PID"></td>
 
@@ -60,30 +57,30 @@
 
                 <tr>
 
-                    <td>Name&nbsp </td>
+                    <td>Name&nbsp</td>
 
                     <td><input type="text" class="inputText" id="name" name="name"></td>
 
                 </tr>
-				
+
                 <tr>
 
-                    <td>Contact&nbsp </td>
+                    <td>Contact&nbsp</td>
 
                     <td><input type="text" class="inputText" id="contact" name="contact"></td>
 
                 </tr>
-				
+
                 <tr>
 
-                    <td>Phone Number&nbsp </td>
+                    <td>Phone Number&nbsp</td>
 
                     <td><input type="text" class="inputText" id="phone" name="phone"></td>
 
                 </tr>
-				
+
             </table>
-		<input type="submit">
+            <input type="submit">
         </form>
 
     </body>

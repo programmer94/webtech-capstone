@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,9 +14,7 @@
 
         <script type="text/javascript">
 
-            function returnToHomePage()
-
-            {
+            function returnToHomePage() {
 
                 window.location.replace("index.html");
 
@@ -32,19 +28,19 @@
 
         <div id="nav">
 
-			<ul>
+            <ul>
 
-				<li><a href="index.html"><b>Book Store</b></a></li>
+                <li><a href="index.html"><b>Book Store</b></a></li>
 
-				<li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
 
-				<li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
+                <li class="active"><a href="NewBookstoreEntry.php">Add Book</a></li>
 
-				<li><a href="indexToTestTableCall.php">Book List</a></li>
+                <li><a href="indexToTestTableCall.php">Book List</a></li>
 
-			</ul> 
+            </ul>
 
-		</div>
+        </div>
 
         <form id="newInventoryEntry" action="newInventoryEntryActionPage.php" method="post">
 
@@ -52,7 +48,7 @@
 
                 <tr>
 
-                    <td>ISBN&nbsp </td>
+                    <td>ISBN&nbsp</td>
 
                     <td><input type="text" class="inputText" id="ISBN" name="ISBN"></td>
 
@@ -60,14 +56,14 @@
 
                 <tr>
 
-                    <td>Quantity&nbsp </td>
+                    <td>Quantity&nbsp</td>
 
                     <td><input type="text" class="inputText" id="qty" name="qty"></td>
 
                 </tr>
-				
+
             </table>
-		<input type="submit">
+            <input type="submit">
         </form>
 
     </body>

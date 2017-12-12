@@ -1,36 +1,35 @@
-
 <?php
 
-  $con = mysqli_connect('localhost','nesrin','p4@cis435','bookstore','3306');
+    $con = mysqli_connect('localhost', 'nesrin', 'p4@cis435', 'bookstore', '3306');
 
-  $pid = "'";
+    $pid = "'";
 
-  $pid .= $_POST['PID'];
+    $pid .= $_POST['PID'];
 
-  $pid .= "'";
+    $pid .= "'";
 
-  $name = "'";
-  
-  $name .= $_POST['name'];
-  
-  $name .= "'";
-  
-  $contact = "'";
-  
-  $contact .= $_POST['contact'];
-  
-  $contact .= "'";
-  
-  $phone = "'";
-  
-  $phone .= $_POST['phone'];
-  
-  $phone .= "'";
+    $name = "'";
 
-  $query = "INSERT INTO publisher (PublisherID, Name, Contact, PhoneNum) VALUES ($pid, $name, $contact, $phone)";
+    $name .= $_POST['name'];
 
-  $result = mysqli_query($con, $query);
+    $name .= "'";
 
-  header("Location: Table_Publisher.php");
+    $contact = "'";
+
+    $contact .= $_POST['contact'];
+
+    $contact .= "'";
+
+    $phone = "'";
+
+    $phone .= $_POST['phone'];
+
+    $phone .= "'";
+
+    $query = "INSERT INTO publisher (PublisherID, Name, Contact, PhoneNum) VALUES ($pid, $name, $contact, $phone)";
+
+    $result = mysqli_query($con, $query);
+
+    header("Location: Table_Publisher.php");
 
 ?>
