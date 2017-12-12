@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddPublisher() {
-                window.location.replace("NewPublisherEntry.php");
+                window.location.replace("../NewPublisherEntry.php");
             }
         </script>
     </head>

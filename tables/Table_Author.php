@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddAuthor() {
-                window.location.replace("NewAuthorEntry.php");
+                window.location.replace("../NewAuthorEntry.php");
             }
         </script>
     </head>

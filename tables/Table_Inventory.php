@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddInventory() {
-                window.location.replace("NewInventoryEntry.php");
+                window.location.replace("../NewInventoryEntry.php");
             }
         </script>
     </head>

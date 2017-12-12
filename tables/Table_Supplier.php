@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddSupplier() {
-                window.location.replace("NewSupplierEntry.php");
+                window.location.replace("../NewSupplierEntry.php");
             }
         </script>
     </head>

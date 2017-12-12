@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddBilling() {
-                window.location.replace("NewBillingEntry.php");
+                window.location.replace("../NewBillingEntry.php");
             }
         </script>
     </head>

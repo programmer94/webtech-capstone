@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddOrder() {
-                window.location.replace("NewOrderEntry.php");
+                window.location.replace("../NewOrderEntry.php");
             }
         </script>
     </head>

@@ -29,7 +29,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/main.css">
         <script type="text/javascript">
             function redirectToAddBook() {
-                window.location.replace("NewBookstoreEntry.php");
+                window.location.replace("../NewBookstoreEntry.php");
             }
         </script>
     </head>
