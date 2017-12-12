@@ -67,7 +67,7 @@
             <tr>
                 <th>ISBN</th>
                 <th>Book Shelf Number</th>
-                <th>Puplisher ID</th>
+                <th>Publisher ID</th>
                 <th>Title</th>
                 <th>Author ID</th>
             </tr>

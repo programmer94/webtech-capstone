@@ -11,15 +11,15 @@
             }
 
             function redirectToAuthorTable() {
-                window.location.replace("Table_Author.php");
+                window.location.replace("tables/Table_Author.php");
             }
 
             function redirectToPublisherTable() {
-                window.location.replace("Table_Publisher.php");
+                window.location.replace("tables/Table_Publisher.php");
             }
 
             function redirectToBookshelfTable() {
-                window.location.replace("Table_Book_Shelf.php");
+                window.location.replace("tables/Table_Book_Shelf.php");
             }
         </script>
     </head>
@@ -63,8 +63,7 @@
                     <td>Bookshelf Number&nbsp</td>
                     <td><input type="text" class="inputText id=" BID" name="BID"></td>
                     <td>
-                        <button type="button id=" searchBookshelves
-                        " OnClick=redirectToBookshelfTable()>Search or Add Booksheves</button></td>
+                        <button type="button" id="searchBookshelves" OnClick=redirectToBookshelfTable()>Search or Add Bookshelves</button></td>
                 </tr>
             </table>
             <input type="submit">

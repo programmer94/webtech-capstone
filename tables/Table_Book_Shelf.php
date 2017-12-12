@@ -66,8 +66,11 @@
         <h1>Book Shelf DB</h1>
         <table>
             <tr>
+            	<th>ISBN</th>
                 <th>Book Shelf Number</th>
-                <th>Category</th>
+                <th>Publisher ID</th>
+                <th>Title</th>
+                <th>Author ID</th>
             </tr>
             <?php
                 // fetch each record in result set
