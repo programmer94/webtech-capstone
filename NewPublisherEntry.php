@@ -46,41 +46,24 @@
         <form id="newAuthorEntry" action="newPublisherEntryActionPage.php" method="post">
 
             <table>
-
                 <tr>
-
                     <td>Publisher ID&nbsp</td>
-
                     <td><input type="text" class="inputText" id="PID" name="PID"></td>
-
                 </tr>
-
                 <tr>
-
                     <td>Name&nbsp</td>
-
                     <td><input type="text" class="inputText" id="name" name="name"></td>
-
                 </tr>
-
                 <tr>
-
                     <td>Contact&nbsp</td>
-
                     <td><input type="text" class="inputText" id="contact" name="contact"></td>
-
                 </tr>
-
                 <tr>
-
                     <td>Phone Number&nbsp</td>
-
                     <td><input type="text" class="inputText" id="phone" name="phone"></td>
-
                 </tr>
-
             </table>
-            <input type="submit">
+            <input type="submit" value="Submit" name="info">
         </form>
 
     </body>
