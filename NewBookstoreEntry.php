@@ -32,7 +32,7 @@
                 <li><a href="indexToTestTableCall.php">Book List</a></li>
             </ul>
         </div>
-        <form id="newEntry" action="newEntryActionPage.php" method="post">
+        <form id="newEntry" action="actionpages/newEntryActionPage.php" method="post">
             <table>
                 <tr>
                     <td>ISBN&nbsp</td>

@@ -42,7 +42,7 @@
 
         </div>
 
-        <form id="newAuthorEntry" action="newAuthorEntryActionPage.php" method="post">
+        <form id="newAuthorEntry" action="actionpages/newAuthorEntryActionPage.php" method="post">
 
             <table>
 

@@ -41,7 +41,7 @@
 
         </div>
 
-        <form id="newBillingEntry" action="newBillingEntryActionPage.php" method="post">
+        <form id="newBillingEntry" action="actionpages/newBillingEntryActionPage.php" method="post">
 
             <table>
 
