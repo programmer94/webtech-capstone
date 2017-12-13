@@ -58,7 +58,7 @@
 
                     <td>First Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="fName" name="fName" required pattern="^[A-Z][a-z]$"></td>
+                    <td><input type="text" class="inputText" id="fName" name="fName" required pattern="^[K-Z a-z ,.'-]+$"></td>
 
                 </tr>
 
@@ -66,7 +66,7 @@
 
                     <td>Last Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="lName" name="lName" required pattern="^[A-Z][a-z]$"></td>
+                    <td><input type="text" class="inputText" id="lName" name="lName" required pattern="^[K-Z a-z ,.'-]+$"></td>
 
                 </tr>
             </table>

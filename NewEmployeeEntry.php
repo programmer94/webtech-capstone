@@ -58,7 +58,7 @@
 
                     <td>Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="name" name="name"></td>
+                    <td><input type="text" class="inputText" id="name" name="name" required></td>
 
                 </tr>
 
