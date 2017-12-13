@@ -33,7 +33,7 @@
     $EID .= "'";
 
 
-    $query = "INSERT INTO orders (Order_ID, OrderDate, OrderTime, SupplierID, EmployeeID) VALUES ($OID, $oDate, $oTime, $SID, $EID)";
+    $query = "INSERT INTO orders (OrderID, OrderDate, OrderTime, SupplierID, EmployeeID) VALUES ($OID, $oDate, $oTime, $SID, $EID)";
 
     $result = mysqli_query($con, $query);
 

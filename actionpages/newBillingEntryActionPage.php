@@ -31,9 +31,15 @@
     $ISBN .= $_POST['ISBN'];
 
     $ISBN .= "'";
+	
+	$storeNum = "'";
+
+    $storeNum .= $_POST['storeNum'];
+
+    $storeNum .= "'";
 
 
-    $query = "INSERT INTO billing (Invoice_Num, Date, Price, Quantity, ISBN) VALUES ($BillID, $date, $price, $qty, $ISBN)";
+    $query = "INSERT INTO billing (InvoiceNumb, BillingDate, Price, Quantity, ISBN, StoreNum) VALUES ($BillID, $date, $price, $qty, $ISBN, $storeNum)";
 
     $result = mysqli_query($con, $query);
 

@@ -6,7 +6,7 @@
     $isbn .= "'";
 
     $title = "'";
-    $title .= $_POST['TITLE'];
+    $title .= $_POST['Title'];
     $title .= "'";
 
     $pid = "'";
@@ -21,7 +21,7 @@
     $bid .= $_POST['BID'];
     $bid .= "'";
 
-    $query = "INSERT INTO book (ISBN, Bookshelf_Num, PublisherID, AuthorID, Title) VALUES ($isbn, $bid, $pid, $aid, $title)";
+    $query = "INSERT INTO book (ISBN, Bookshelf_Num, PublisherID, Title, AuthorID) VALUES ($isbn, $bid, $pid, $title, $aid)";
 
     $result = mysqli_query($con, $query);
 

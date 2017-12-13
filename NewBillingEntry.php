@@ -84,6 +84,13 @@
                     <td><input type="text" class="inputText" id="ISBN" name="ISBN" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
+                <tr>
+
+                    <td>Store Number</td>
+
+                    <td><input type="text" class="inputText" id="storeNum" name="storeNum" required pattern="^[0-9]{0,10}$"></td>
+
+                </tr>
             </table>
             <input type="submit">
         </form>

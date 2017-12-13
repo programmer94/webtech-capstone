@@ -45,7 +45,7 @@
         <?php
             //php 7
             // build SELECT query
-            $query = "SELECT * FROM book shelf";
+            $query = "SELECT * FROM book_shelf";
 
             // Connect to MySQL
             if (!($database = mysqli_connect('localhost', 'nesrin', 'p4@cis435', 'bookstore', '3306')))
@@ -66,11 +66,8 @@
         <h1>Book Shelf DB</h1>
         <table>
             <tr>
-            	<th>ISBN</th>
-                <th>Book Shelf Number</th>
-                <th>Publisher ID</th>
-                <th>Title</th>
-                <th>Author ID</th>
+            	<th>Book Shelf Number</th>
+                <th>Category</th>
             </tr>
             <?php
                 // fetch each record in result set

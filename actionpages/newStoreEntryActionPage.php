@@ -21,7 +21,7 @@
     $phone .= "'";
 
 
-    $query = "INSERT INTO book_store (Store_Num, Location, Phone_Num) VALUES ($StoreID, $loc, $phone)";
+    $query = "INSERT INTO book_store (StoreNum, Address, PhoneNum) VALUES ($StoreID, $loc, $phone)";
 
 
     $result = mysqli_query($con, $query);

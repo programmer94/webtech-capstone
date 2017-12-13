@@ -28,7 +28,7 @@
     $phone .= "'";
 
 
-    $query = "INSERT INTO supplier (SupplierID, Name, Address, Phone_Num) VALUES ($sid, $name, $add, $phone)";
+    $query = "INSERT INTO supplier (SupplierID, Name, Address, PhoneNum) VALUES ($sid, $name, $add, $phone)";
 
 
     $result = mysqli_query($con, $query);

@@ -23,7 +23,7 @@
     $lName .= "'";
 
 
-    $query = "INSERT INTO author (AuthorID, fName, lName) VALUES ($aid, $fName, $lName)";
+    $query = "INSERT INTO author (AuthorID, firstName, lastName) VALUES ($aid, $fName, $lName)";
 
 
     $result = mysqli_query($con, $query);

@@ -66,7 +66,7 @@
 
                     <td>Order Time&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="oTime" name="oTime" placeholder="XX:XX AM" required pattern="(([01]?[0-9]):([0-5][0-9]) ([AaPp][Mm]))"></td>
+                    <td><input type="text" class="inputText" id="oTime" name="oTime" placeholder="XX:XXP" required pattern="(([01]?[0-9]):([0-5][0-9])([AaPp]))"></td>
 
                 </tr>
 

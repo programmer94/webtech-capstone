@@ -61,7 +61,7 @@
                 </tr>
                 <tr>
                     <td>Bookshelf Number&nbsp</td>
-                    <td><input type="text" class="inputText id=" BID" name="BID" pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="BID" name="BID" required pattern="^[0-9]{0,10}$"></td>
                     <td>
                         <button type="button" id="searchBookshelves" OnClick=redirectToBookshelfTable()>Search or Add Bookshelves</button></td>
                 </tr>
