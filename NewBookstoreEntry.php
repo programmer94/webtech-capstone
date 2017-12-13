@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -33,7 +33,7 @@
             </ul>
         </div>
         <form id="newEntry" action="actionpages/newEntryActionPage.php" method="post">
-            <table>
+            <table class="submissionTable">
                 <tr>
                     <td>ISBN&nbsp</td>
                     <td><input type="text" class="inputText" id="ISBN" name="ISBN" required pattern="^(97(8|9))?\d{9}(\d|X)$" placeholder="ISBN-10"></td>
