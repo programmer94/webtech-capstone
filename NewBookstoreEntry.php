@@ -36,15 +36,15 @@
             <table>
                 <tr>
                     <td>ISBN&nbsp</td>
-                    <td><input type="text" class="inputText" id="ISBN" name="ISBN"></td>
+                    <td><input type="text" class="inputText" id="ISBN" name="ISBN" required pattern="^(97(8|9))?\d{9}(\d|X)$" placeholder="ISBN-10"></td>
                 </tr>
                 <tr>
                     <td>Title&nbsp</td>
-                    <td><input type="text" class="inputText" id="Title" name="Title"></td>
+                    <td><input type="text" class="inputText" id="Title" name="Title" required></td>
                 </tr>
                 <tr>
                     <td>Publisher ID&nbsp</td>
-                    <td><input type="text" class="inputText" id="PID" name="PID"></td>
+                    <td><input type="text" class="inputText" id="PID" required name="PID" pattern="^[0-9]{0,10}$"></td>
                     <td>
                         <button type="button" id="searchPublishers" OnClick=redirectToPublisherTable()>Search or Add
                             Publishers
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td>Author ID&nbsp</td>
-                    <td><input type="text" class="inputText" id="AID" name="AID"></td>
+                    <td><input type="text" class="inputText" id="AID" name="AID" required pattern="^[0-9]{0,10}$"></td>
                     <td>
                         <button type="button" id="searchAuthors" OnClick=redirectToAuthorTable()>Search or Add Authors
                         </button>
@@ -61,7 +61,7 @@
                 </tr>
                 <tr>
                     <td>Bookshelf Number&nbsp</td>
-                    <td><input type="text" class="inputText id=" BID" name="BID"></td>
+                    <td><input type="text" class="inputText id=" BID" name="BID" pattern="^[0-9]{0,10}$"></td>
                     <td>
                         <button type="button" id="searchBookshelves" OnClick=redirectToBookshelfTable()>Search or Add Bookshelves</button></td>
                 </tr>

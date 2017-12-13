@@ -50,7 +50,7 @@
 
                     <td>Employee ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="EID" name="EID"></td>
+                    <td><input type="text" class="inputText" id="EID" name="EID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -74,7 +74,7 @@
 
                     <td>Phone Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="phone" name="phone"></td>
+                    <td><input type="text" class="inputText" id="phone" name="phone" placeholder="XXXXXXXXX" required pattern="^[0-9]{10}$"></td>
 
                 </tr>
 
@@ -82,7 +82,7 @@
 
                     <td>Hired Date&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="hDate" name="hDate"></td>
+                    <td><input type="text" class="inputText" id="hDate" name="hDate" required pattern="^((0|1)\d{1})/((0|1|2)\d{1})/((19|20)\d{2})"></td>
 
                 </tr>
 
@@ -90,7 +90,7 @@
 
                     <td>Pay Rate&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="pRate" name="pRate"></td>
+                    <td><input type="text" class="inputText" id="pRate" name="pRate" pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -98,7 +98,7 @@
 
                     <td>Position&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="pos" name="pos"></td>
+                    <td><input type="text" class="inputText" id="pos" name="pos" required></td>
 
                 </tr>
 

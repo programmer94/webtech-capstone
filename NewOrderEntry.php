@@ -50,7 +50,7 @@
 
                     <td>Order ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="OID" name="OID"></td>
+                    <td><input type="text" class="inputText" id="OID" name="OID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -58,7 +58,7 @@
 
                     <td>Order Date&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="oDate" name="oDate"></td>
+                    <td><input type="text" class="inputText" id="oDate" name="oDate" placeholder="XX/XX/XXXX" required pattern="^((0|1)\d{1})/((0|1|2)\d{1})/((19|20)\d{2})"></td>
 
                 </tr>
 
@@ -66,7 +66,7 @@
 
                     <td>Order Time&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="oTime" name="oTime"></td>
+                    <td><input type="text" class="inputText" id="oTime" name="oTime" placeholder="XX:XX AM" required pattern="(([01]?[0-9]):([0-5][0-9]) ([AaPp][Mm]))"></td>
 
                 </tr>
 
@@ -74,7 +74,7 @@
 
                     <td>Supplier ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="SID" name="SID"></td>
+                    <td><input type="text" class="inputText" id="SID" name="SID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -82,7 +82,7 @@
 
                     <td>Employee ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="EID" name="EID"></td>
+                    <td><input type="text" class="inputText" id="EID" name="EID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
             </table>

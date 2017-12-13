@@ -19,6 +19,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Inventory.php");
+    header("Location: ../tables/Table_Inventory.php");
 
 ?>

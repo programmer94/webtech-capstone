@@ -25,5 +25,5 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Book.php");
+    header("Location: ../tables/Table_Book.php");
 ?>

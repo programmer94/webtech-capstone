@@ -50,7 +50,7 @@
 
                     <td>AuthorID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="AID" name="AID"></td>
+                    <td><input type="text" class="inputText" id="AID" name="AID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -58,7 +58,7 @@
 
                     <td>First Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="fName" name="fName"></td>
+                    <td><input type="text" class="inputText" id="fName" name="fName" required pattern="^[A-Z][a-z]$"></td>
 
                 </tr>
 
@@ -66,7 +66,7 @@
 
                     <td>Last Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="lName" name="lName"></td>
+                    <td><input type="text" class="inputText" id="lName" name="lName" required pattern="^[A-Z][a-z]$"></td>
 
                 </tr>
             </table>

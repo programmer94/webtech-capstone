@@ -37,6 +37,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Billing.php");
+    header("Location: ../tables/Table_Billing.php");
 
 ?>

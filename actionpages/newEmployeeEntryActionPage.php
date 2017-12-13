@@ -48,6 +48,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Employee.php");
+    header("Location: ../tables/Table_Employee.php");
 
 ?>

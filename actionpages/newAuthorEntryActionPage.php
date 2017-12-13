@@ -28,6 +28,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Author.php");
+    header("Location: ../tables/Table_Author.php");
 
 ?>

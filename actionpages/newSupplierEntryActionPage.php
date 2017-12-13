@@ -33,6 +33,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Supplier.php");
+    header("Location: ../tables/Table_Supplier.php");
 
 ?>

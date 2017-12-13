@@ -49,7 +49,7 @@
 
                     <td>Invoice Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="BillID" name="BillID"></td>
+                    <td><input type="text" class="inputText" id="BillID" name="BillID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -57,7 +57,7 @@
 
                     <td>Date&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="date" name="date"></td>
+                    <td><input type="text" class="inputText" id="date" name="date" placeholder="XX/XX/XXXX" required pattern="^((0|1)\d{1})/((0|1|2)\d{1})/((19|20)\d{2})"></td>
 
                 </tr>
 
@@ -65,7 +65,7 @@
 
                     <td>Price&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="price" name="price"></td>
+                    <td><input type="text" class="inputText" id="price" name="price" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -73,7 +73,7 @@
 
                     <td>Quantity&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="qty" name="qty"></td>
+                    <td><input type="text" class="inputText" id="qty" name="qty" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -81,7 +81,7 @@
 
                     <td>ISBN&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="ISBN" name="ISBN"></td>
+                    <td><input type="text" class="inputText" id="ISBN" name="ISBN" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
             </table>

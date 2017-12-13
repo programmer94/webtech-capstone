@@ -30,6 +30,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: tables/Table_Publisher.php");
+    header("Location: ../tables/Table_Publisher.php");
 
 ?>

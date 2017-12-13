@@ -48,9 +48,9 @@
 
                 <tr>
 
-                    <td>Store_Num&nbsp</td>
+                    <td>Store Num&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="StoreID" name="StoreID"></td>
+                    <td><input type="text" class="inputText" id="StoreID" name="StoreID" required pattern="^[0-9]{0,10}$"></td>
 
                 </tr>
 
@@ -58,7 +58,7 @@
 
                     <td>Location&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="loc" name="loc"></td>
+                    <td><input type="text" class="inputText" id="loc" name="loc" required></td>
 
                 </tr>
 
@@ -66,7 +66,7 @@
 
                     <td>Phone Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="phone" name="phone">
+                    <td><input type="text" class="inputText" id="phone" name="phone" placeholder="XXXXXXXXX" required pattern="^[0-9]{10}$"></td>
                 </tr>
             </table>
 

@@ -18,6 +18,6 @@
 
     $result = mysqli_query($con, $query);
 
-    header("Location: Table_Book_Shelf.php");
+    header("Location: ../tables/Table_Book_Shelf.php");
 
 ?>
