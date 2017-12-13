@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html lang="en">
 
@@ -45,7 +45,7 @@
 
         <form id="newAuthorEntry" action="actionpages/newPublisherEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
                 <tr>
                     <td>Publisher ID&nbsp</td>
                     <td><input type="text" class="inputText" id="PID" name="PID" required pattern="^[0-9]{0,10}$"></td>

@@ -23,7 +23,7 @@
         </script>
     </head>
 
-    <body>
+     <body>
 
         <div id="nav">
 
@@ -43,7 +43,7 @@
 
         <form id="newBillingEntry" action="actionpages/newBillingEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 

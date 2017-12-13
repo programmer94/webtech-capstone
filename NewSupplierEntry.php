@@ -24,7 +24,7 @@
 
     </head>
 
-    <body>
+     <body>
 
         <div id="nav">
 
@@ -44,7 +44,7 @@
 
         <form id="newAuthorEntry" action="actionpages/newSupplierEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 

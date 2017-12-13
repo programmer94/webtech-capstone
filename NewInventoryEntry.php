@@ -44,7 +44,7 @@
 
         <form id="newInventoryEntry" action="actionpages/newInventoryEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 

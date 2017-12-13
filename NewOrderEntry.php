@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+ <html lang="en">
 
     <head>
 
@@ -44,7 +44,7 @@
 
         <form id="newOrderEntry" action="actionpages/newOrderEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 

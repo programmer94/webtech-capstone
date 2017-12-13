@@ -18,7 +18,7 @@
 
                 window.location.replace("index.html");
 
-            }
+             }
 
         </script>
 
@@ -44,7 +44,7 @@
 
         <form id="newAuthorEntry" action="actionpages/newEmployeeEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 
