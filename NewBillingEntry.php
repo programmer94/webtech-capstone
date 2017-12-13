@@ -65,7 +65,7 @@
 
                     <td>Price&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="price" name="price" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="price" name="price" required pattern="^[0-9 .]{0,10}$"></td>
 
                 </tr>
 

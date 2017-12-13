@@ -58,7 +58,7 @@
 
                     <td>Category&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="cat" name="cat" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="cat" name="cat" required></td>
 
                 </tr>
 
