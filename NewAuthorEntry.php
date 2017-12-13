@@ -44,7 +44,7 @@
 
         <form id="newAuthorEntry" action="actionpages/newAuthorEntryActionPage.php" method="post">
 
-            <table>
+            <table class="submissionTable">
 
                 <tr>
 
