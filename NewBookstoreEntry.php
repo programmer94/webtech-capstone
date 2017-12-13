@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td>Author ID&nbsp</td>
-                    <td><input type="text" class="inputText" id="AID" name="AID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" placeholder="XXXX" name="AID" required pattern="^[0-9]{4}$"></td>
                     <td>
                         <button type="button" id="searchAuthors" OnClick=redirectToAuthorTable()>Search or Add Authors
                         </button>
@@ -61,12 +61,14 @@
                 </tr>
                 <tr>
                     <td>Bookshelf Number&nbsp</td>
-                    <td><input type="text" class="inputText" id="BID" name="BID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="BID" placeholder="XXXX" name="BID" required pattern="^[0-9]{4}$"></td>
                     <td>
                         <button type="button" id="searchBookshelves" OnClick=redirectToBookshelfTable()>Search or Add Bookshelves</button></td>
                 </tr>
             </table>
-            <input type="submit">
+            <div style="text-align:center;">
+            	<input type="submit">
+            </div> 
         </form>
     </body>
 </html>

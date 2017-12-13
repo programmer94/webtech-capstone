@@ -49,7 +49,7 @@
 
                     <td>Invoice Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="BillID" name="BillID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" placeholder="XXXXXXXXX" id="BillID" name="BillID" required pattern="^[0-9]{0,9}$"></td>
 
                 </tr>
 
@@ -57,7 +57,7 @@
 
                     <td>Date&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="date" name="date" placeholder="XX/XX/XXXX" required pattern="^((0|1)\d{1})/((0|1|2)\d{1})/((19|20)\d{2})"></td>
+                    <td><input type="text" class="inputText" id="date" name="date" placeholder="YYYY-MM-DD" required pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$"></td>
 
                 </tr>
 
@@ -88,7 +88,7 @@
 
                     <td>Store Number</td>
 
-                    <td><input type="text" class="inputText" id="storeNum" name="storeNum" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="storeNum" placeholder="XXXX" name="storeNum" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
             </table>

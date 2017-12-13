@@ -48,7 +48,7 @@
             <table class="submissionTable">
                 <tr>
                     <td>Publisher ID&nbsp</td>
-                    <td><input type="text" class="inputText" id="PID" name="PID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" placeholder="XXXX" id="PID" name="PID" required pattern="^[0-9]{4}$"></td>
                 </tr>
                 <tr>
                     <td>Name&nbsp</td>

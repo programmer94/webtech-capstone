@@ -50,7 +50,7 @@
 
                     <td>Bookshelf Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="BSID" name="BSID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="BSID" placeholder="XXXX" name="BSID" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 

@@ -50,7 +50,7 @@
 
                     <td>Employee ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="EID" name="EID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" placeholder="XXXX" id="EID" name="EID" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 
@@ -82,7 +82,7 @@
 
                     <td>Hired Date&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="hDate" name="hDate" required pattern="^((0|1)\d{1})/((0|1|2)\d{1})/((19|20)\d{2})"></td>
+                    <td><input type="text" class="inputText" id="hDate" name="hDate" placeholder="YYYY-MM-DD" required pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$"></td>
 
                 </tr>
 

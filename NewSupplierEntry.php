@@ -50,7 +50,7 @@
 
                     <td>Supplier ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="SID" name="SID"></td>
+                    <td><input type="text" class="inputText" placeholder="XXXX" id="SID" name="SID" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 
@@ -58,7 +58,7 @@
 
                     <td>Name&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="name" name="name"></td>
+                    <td><input type="text" class="inputText" id="name" name="name" required></td>
 
                 </tr>
 
@@ -74,7 +74,7 @@
 
                     <td>Phone Number&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="phone" name="phone">
+                    <td><input type="text" class="inputText" id="phone" name="phone" placeholder="XXXXXXXXX" required pattern="^[0-9]{10}$">
                 </tr>
             </table>
             <input type="submit">

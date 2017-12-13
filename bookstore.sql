@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.6
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 11, 2017 at 02:24 AM
+-- Host: localhost
+-- Generation Time: Dec 13, 2017 at 03:49 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -13,9 +13,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
@@ -29,12 +29,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `author` (
-  `AuthorID`  VARCHAR(4)  NOT NULL,
-  `firstName` VARCHAR(25) NOT NULL,
-  `lastName`  VARCHAR(25) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `AuthorID` varchar(4) NOT NULL,
+  `firstName` varchar(25) NOT NULL,
+  `lastName` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -43,15 +41,13 @@ CREATE TABLE `author` (
 --
 
 CREATE TABLE `billing` (
-  `InvoiceNumb` MEDIUMINT(9) NOT NULL,
-  `BillingDate` DATE         DEFAULT NULL,
-  `Price`       MEDIUMINT(9) DEFAULT NULL,
-  `Quantity`    MEDIUMINT(9) DEFAULT NULL,
-  `ISBN`        VARCHAR(255) DEFAULT NULL,
-  `StoreNum`    MEDIUMINT(9) DEFAULT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `InvoiceNumb` mediumint(9) NOT NULL,
+  `BillingDate` date DEFAULT NULL,
+  `Price` mediumint(9) DEFAULT NULL,
+  `Quantity` mediumint(9) DEFAULT NULL,
+  `ISBN` varchar(255) DEFAULT NULL,
+  `StoreNum` mediumint(9) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -60,14 +56,12 @@ CREATE TABLE `billing` (
 --
 
 CREATE TABLE `book` (
-  `ISBN`          CHAR(13)   NOT NULL,
-  `Bookshelf_Num` CHAR(4)     DEFAULT NULL,
-  `PublisherID`   CHAR(4)     DEFAULT NULL,
-  `Title`         VARCHAR(30) DEFAULT NULL,
-  `Author ID`     VARCHAR(4) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `ISBN` char(13) NOT NULL,
+  `Bookshelf_Num` char(4) DEFAULT NULL,
+  `PublisherID` char(4) DEFAULT NULL,
+  `Title` varchar(30) DEFAULT NULL,
+  `AuthorID` varchar(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -76,11 +70,9 @@ CREATE TABLE `book` (
 --
 
 CREATE TABLE `book_shelf` (
-  `Bookshelf_Num` VARCHAR(3)  NOT NULL,
-  `Category`      VARCHAR(15) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `Bookshelf_Num` varchar(4) NOT NULL,
+  `Category` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -89,12 +81,10 @@ CREATE TABLE `book_shelf` (
 --
 
 CREATE TABLE `book_store` (
-  `StoreNum` VARCHAR(4)  NOT NULL,
-  `Address`  VARCHAR(35) NOT NULL,
-  `PhoneNum` VARCHAR(15) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `StoreNum` varchar(4) NOT NULL,
+  `Address` varchar(35) NOT NULL,
+  `PhoneNum` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -103,16 +93,14 @@ CREATE TABLE `book_store` (
 --
 
 CREATE TABLE `employee` (
-  `EmployeeID` INT(4) NOT NULL,
-  `Name`       VARCHAR(20)    DEFAULT NULL,
-  `Address`    VARCHAR(25)    DEFAULT NULL,
-  `PhoneNum`   CHAR(13)       DEFAULT NULL,
-  `HiredDate`  DATE           DEFAULT NULL,
-  `Pay_Rate`   DECIMAL(10, 2) DEFAULT NULL,
-  `Position`   VARBINARY(10)  DEFAULT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `EmployeeID` int(4) NOT NULL,
+  `Name` varchar(20) DEFAULT NULL,
+  `Address` varchar(25) DEFAULT NULL,
+  `PhoneNum` char(13) DEFAULT NULL,
+  `HiredDate` date DEFAULT NULL,
+  `Pay_Rate` decimal(10,2) DEFAULT NULL,
+  `Position` varbinary(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -121,11 +109,9 @@ CREATE TABLE `employee` (
 --
 
 CREATE TABLE `inventory` (
-  `ISBN`     VARCHAR(13) NOT NULL,
-  `Quantity` INT(5)      NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `ISBN` varchar(13) NOT NULL,
+  `Quantity` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -134,14 +120,12 @@ CREATE TABLE `inventory` (
 --
 
 CREATE TABLE `orders` (
-  `OrderID`    INT(4) NOT NULL,
-  `OrderDate`  DATE       DEFAULT NULL,
-  `OrderTime`  VARCHAR(6) DEFAULT NULL,
-  `SupplierID` INT(4)     DEFAULT NULL,
-  `EmployeeID` INT(4)     DEFAULT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `OrderID` int(4) NOT NULL,
+  `OrderDate` date DEFAULT NULL,
+  `OrderTime` varchar(6) DEFAULT NULL,
+  `SupplierID` int(4) DEFAULT NULL,
+  `EmployeeID` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -150,13 +134,11 @@ CREATE TABLE `orders` (
 --
 
 CREATE TABLE `publisher` (
-  `PublisherID` VARCHAR(4)  NOT NULL,
-  `Name`        VARCHAR(20) NOT NULL,
-  `Contact`     VARCHAR(20) NOT NULL,
-  `PhoneNum`    VARCHAR(15) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `PublisherID` varchar(4) NOT NULL,
+  `Name` varchar(20) NOT NULL,
+  `Contact` varchar(20) NOT NULL,
+  `PhoneNum` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -165,13 +147,11 @@ CREATE TABLE `publisher` (
 --
 
 CREATE TABLE `supplier` (
-  `SupplierID` INT(4)      NOT NULL,
-  `Name`       VARCHAR(30) NOT NULL,
-  `Address`    VARCHAR(35) NOT NULL,
-  `PhoneNum`   VARCHAR(15) NOT NULL
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  `SupplierID` int(4) NOT NULL,
+  `Name` varchar(30) NOT NULL,
+  `Address` varchar(35) NOT NULL,
+  `PhoneNum` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
@@ -238,6 +218,6 @@ ALTER TABLE `supplier`
   ADD PRIMARY KEY (`SupplierID`);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT = @OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS = @OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION = @OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

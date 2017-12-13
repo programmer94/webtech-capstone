@@ -50,7 +50,7 @@
 
                     <td>AuthorID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="AID" name="AID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="AID" name="AID" placeholder="XXXX" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 

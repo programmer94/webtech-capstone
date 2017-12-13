@@ -50,7 +50,7 @@
 
                     <td>Order ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="OID" name="OID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="OID" name="OID" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 
@@ -74,7 +74,7 @@
 
                     <td>Supplier ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="SID" name="SID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="SID" name="SID" placeholder="XXXX" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
 
@@ -82,7 +82,7 @@
 
                     <td>Employee ID&nbsp</td>
 
-                    <td><input type="text" class="inputText" id="EID" name="EID" required pattern="^[0-9]{0,10}$"></td>
+                    <td><input type="text" class="inputText" id="EID" name="EID" placeholder="XXXX" required pattern="^[0-9]{4}$"></td>
 
                 </tr>
             </table>
